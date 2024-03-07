@@ -41,8 +41,8 @@ class UserManager (object):
         """
         if user_code in self.registered_users:
             user_info = self.registered_users[user_code]
-            print(f"\nInformación del usuario {user_code}:")
-            print(f"Nombre: {user_info['nombre']}")
-            print(f"Correo electrónico: {user_info['correo']}")
+            print(f"\nInformación del usuario con código {user_code}:")
+            print(f"Nombre: {user_info['name']}")
+            print(f"Correo electrónico: {user_info['email']}")
         else:
             print("El código de usuario ingresado no existe.")
